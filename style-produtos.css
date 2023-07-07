@@ -1,0 +1,322 @@
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lora&family=Source+Code+Pro:ital@1&display=swap');
+
+@font-face {
+    font-family: "Azonix.otf";
+    src: url("/Users/raissa/Downloads/ProjetoWeb/font/Azonix.otf");
+}
+
+@font-face {
+    font-family: "BB bold";
+    src: url("file:///C:/Users/pedro/OneDrive/%C3%81rea%20de%20Trabalho/Site%20-%20Thallys/fontes/BancoDoBrasilTextos-bold.ttf");
+}
+
+@font-face {
+    font-family: "BB medium";
+    src: url("file:///C:/Users/pedro/OneDrive/%C3%81rea%20de%20Trabalho/Site%20-%20Thallys/fontes/BancoDoBrasilTextos-medium.ttf");
+}
+
+@font-face {
+    font-family: "BB regular";
+    src: url("file:///C:/Users/pedro/OneDrive/%C3%81rea%20de%20Trabalho/Site%20-%20Thallys/fontes/BancoDoBrasilTextos-regular.ttf");
+}
+/*cores de fundo e de todas as letras sem especificação*/
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: rgb(94, 91, 91);
+    color: rgb(245, 245, 245);
+}
+/*body*/
+
+.missao {
+    color: #9bd8e5;
+    font-size: 30px;
+    font-family: "BB bold";
+    background: #2071B2;
+}
+
+.texto_missao {
+    color: #0e0c0c;
+    margin: 200px 300px 200px 500px;
+    font-family: "BB regular";
+    text-align: left;
+}
+
+/*formatação do cabeçalho*/ 
+
+nav {
+	position: absolute;
+	top: 50px;
+	right: 10px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    background-color: white;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.rolagem{
+    background-color: #0e0c0c;
+    padding: 20px 4%;
+}
+
+header.rolagem a, header.rolagem i{
+    color: white;
+}
+
+header i{
+    font-size: 30px;
+    color: #fff;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner{
+    height: 100%;
+    background-image: url(./lago.jpeg);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.banner h1{
+    font-size: 4em;
+}
+
+.banner h1 span{
+    color: #FFAE81;
+}
+
+/*formatação da logo principal*/
+.logo {
+    width: 100%;
+    font-family: "Azonix.otf",sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    text-decoration: none;
+    margin-right: 1000px;
+}
+
+/*formatação do rodapé*/
+
+.logo-rdp {
+    width: 125px;
+    height: 100px;
+    border-radius: 15px;
+    margin: 0px 0 25px 30px;
+}
+
+:root {
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+main {
+    height: 80vh;
+}
+
+footer {
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+} 
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;    
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #7f37c9;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 50px;
+}
+
+#footer_subscribe p {
+    color: var(--color-neutral-30);
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: #7f37c9;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
